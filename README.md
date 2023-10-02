@@ -7,9 +7,18 @@ What am I doing? Trying to write a new portfolio website for the FAC bootcamp fo
 - Become more proficient with using Git and commits as part of the building process.
 - Use scroll events to trigger animations and other effects on the site.
 - Gain experience working with SVGs for graphical elements and animations.
+- Learn more about animations in CSS, especially @keyframes 
 - Improve code structure and comment use for easier to read & understand code.
+- Gain experience working with AI as a "collaborative" tool to aid with design ideas, icons and structure.
 
-**Include 5 Things from below on the site:**
+**What content does the site contain?**
+- Personal statement
+- Links to previous projects
+- Links to Github & Codewars accounts
+- Link back to the GitHub repo
+- CV, education & experience
+
+**Include at least 5 Things from below on the site:**
 - An animated underline effect when hovering over link text.
 - An effect/animation that is triggered by the user scrolling the site:
     - Text fading in||out
@@ -28,7 +37,7 @@ What am I doing? Trying to write a new portfolio website for the FAC bootcamp fo
     - The 360 turn rotoscope animation turns left or right depending on up/down scroll
     - A rotoscope of Muybridge's horse runs across the screen moving L -> R || R -> L
       depending on up/down scroll
-
+- A functioning 'Contact me' form
 
 **FAC Guidelines and Advice:**
 
