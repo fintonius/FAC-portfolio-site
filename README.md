@@ -38,6 +38,7 @@ What am I doing? Trying to write a new portfolio website for the FAC bootcamp fo
     - A rotoscope of Muybridge's horse runs across the screen moving L -> R || R -> L
       depending on up/down scroll
 - A functioning 'Contact me' form
+- Customise the tab image!
 
 **FAC Guidelines and Advice:**
 
