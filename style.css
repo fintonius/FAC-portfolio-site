@@ -7,36 +7,47 @@
 
 main {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
+    background-color: #ffe600;
+    align-items: center;
 }
 
 
 .centre {
-    background-color: #ffe600;
+
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1200px;
     height: auto;
     align-items: center;
-    flex: 80%;
 }
 
 section {
-    height: 100vh;
+    /* giving a bit of space between top & bottom of each section */
+    padding-block: 3rem;
+    max-width: 100%;
 }
 
 .hero{
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 .bg-animations{
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .gif{
-    width: 50%;
+    width: 100%;
+    max-width: 330px;
     height: auto;
+    object-fit: cover;
 }
