@@ -3,7 +3,7 @@
 What am I doing? Trying to write a new portfolio website for the FAC bootcamp following the guidelines from FAC laid out below
 
 **What do I want to achieve with this site?**
-- Have a "claen" professional looking site that uses motion and visuals to add interest for the user.
+- Have a "clean" professional looking site that uses motion and visuals to add interest for the user.
 - Become more proficient with using Git and commits as part of the building process.
 - Use scroll events to trigger animations and other effects on the site.
 - Gain experience working with SVGs for graphical elements and animations.
