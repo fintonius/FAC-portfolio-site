@@ -4,75 +4,6 @@
 --ff-hero: "Outfit", arial, sans-serif;
 }
 
-/* * {
-    includes padding and border in total dimensions of elements
-    box-sizing: border-box;
-    margin: 0;
-}
-
-body {
-    font-family: var(--ff-base);
-    font-size: 1.25rem;
-    line-height: 1.25;
-    background-color: #ffe600;
-}
-
-h2 {
-    font-family: var(--ff-hero);
-}
-
-.centre {
-    width: 100%;
-    margin-inline: auto;
-}
-
-section {
-    giving a bit of space between top & bottom of each section
-    padding-block: 3rem;
-}
-
-.header > img {
-    padding-inline: 1rem;
-    width: 100%;
-}
-
-.hero,
-.about,
-.contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-inline: 1rem;
-    max-width: 1000px;
-
-}
-
-.hero-text {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    width: 100%;
-}
-
-.hero-text > :first-child {
-    font-family: var(--ff-hero);
-    font-size: 5rem;
-    line-height: 1;
-    color: white;
-}
-
-.gif {
-    width: 100%;
-    max-width: 330px;
-    height: auto;
-    object-fit: cover;
-}
-
-.projects {
-    position: relative;
-    padding-inline: 1rem;
-    width: 100vw;
-    max-width: 1000px;
-} */
-
 *,
 *::before,
 *::after {
@@ -89,13 +20,6 @@ body {
     margin: 0;
 }
 
-
-.wrapper {
-    max-width: 50rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
-}
-
 h1,
 h2 {
     font-family: var(--ff-hero);
@@ -109,12 +33,54 @@ h1 {
     line-height: 4rem;
 }
 
+.projects > .wrapper > h2,
+.form > h2 {
+    color: slategray;
+}
+
 section {
-    padding-block: 5rem;
+    padding-block: 15rem;
+}
+
+.hero {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.gif {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    object-fit: cover;
 }
 
 .projects {
+    /* to give the angle background a reference for position: absolute */
     position: relative;
+    padding-block: 10rem;
+}
+
+.projects > .wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .projects::after {
@@ -125,6 +91,7 @@ section {
     transform: skewY(-5deg);
     z-index: -1;
 }
+
 .project-links {
     margin: 0;
     padding-inline: 0;
@@ -172,18 +139,9 @@ section {
     }
 }
 
-header {
-    display: flex;
-    justify-content: center;
-}
-
-.header {
-    width: 100%;
-    max-width: 1000px;
-}
-
 .about {
     position: relative;
+    padding-block: 15rem;
 }
 
 .contact-form {
