@@ -4,8 +4,8 @@
 --ff-hero: "Outfit", arial, sans-serif;
 }
 
-* {
-    /* includes padding and border in total dimensions of elements */
+/* * {
+    includes padding and border in total dimensions of elements
     box-sizing: border-box;
     margin: 0;
 }
@@ -23,12 +23,11 @@ h2 {
 
 .centre {
     width: 100%;
-    max-width: 1000px;
     margin-inline: auto;
 }
 
 section {
-    /* giving a bit of space between top & bottom of each section */
+    giving a bit of space between top & bottom of each section
     padding-block: 3rem;
 }
 
@@ -43,6 +42,8 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-inline: 1rem;
+    max-width: 1000px;
+
 }
 
 .hero-text {
@@ -68,21 +69,62 @@ section {
 .projects {
     position: relative;
     padding-inline: 1rem;
-    width: 100%;
-    /* max-width: 1000px; */
+    width: 100vw;
+    max-width: 1000px;
+} */
+
+*,
+*::before,
+*::after {
+    /* includes padding and border in total dimensions of elements */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-base);
+    color: whitesmoke;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    background-color: slategray;
+    margin: 0;
+}
+
+
+.wrapper {
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--ff-hero);
+    color: #ffe600;
+    font-weight:800;
+    letter-spacing: .2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+section {
+    padding-block: 5rem;
+}
+
+.projects {
+    position: relative;
 }
 
 .projects::after {
     content: '';
-    background-image: linear-gradient(
-        45deg, yellow, yellow
-    );
+    background: antiquewhite;
     position: absolute;
     inset: 0;
     transform: skewY(-5deg);
     z-index: -1;
 }
-
 .project-links {
     margin: 0;
     padding-inline: 0;
@@ -112,7 +154,7 @@ section {
 }
 
 .scroller[data-animated="true"] {
-    /* From Kevin Powell's "Infinite scroll" tutorial */
+    /* From Kevin Powell's "Infinite scroll" tutorial */    
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -128,4 +170,29 @@ section {
     to {
         transform: translate(calc(-50% - 0.5rem));
     }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.about {
+    position: relative;
+}
+
+.contact-form {
+    /* from css-generators.com */
+    --mask:
+        radial-gradient(45.65px at 50% 62.00px,#000 99%,#0000 101%) calc(50% - 80px) 0/160px 100%,
+        radial-gradient(45.65px at 50% -22px,#0000 99%,#000 101%) 50% 40px/160px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background-color: antiquewhite;
+    color: slategray;
 }
